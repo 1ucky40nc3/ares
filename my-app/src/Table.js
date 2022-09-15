@@ -1,5 +1,5 @@
-import React from "react";
-import { Component } from "react";
+import React from "react"
+import { Component } from "react"
 
 const TableHeader = () => {
     return (
@@ -20,20 +20,20 @@ const TableBody = props => {
                 <td>{row.job}</td>
                 <td><button onClick={() => props.removeCharacter(index)}>Delete</button></td>
             </tr>
-        );
-    });
+        )
+    })
 
-    return <tbody>{rows}</tbody>;
+    return <tbody>{rows}</tbody>
 }
 
 const Table = (props) => {
-    const { characterData, removeCharacter } = props;
+    const { characterData, removeCharacter } = props
         return (
             <table>
                 <TableHeader />
                 <TableBody characterData={characterData} removeCharacter={removeCharacter} />
             </table>
-        );
+        )
 }
 
-export default Table;
+export default Table

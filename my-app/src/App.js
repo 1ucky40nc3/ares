@@ -1,5 +1,5 @@
-import React from 'react';
-import Table from "./Table";
+import React from 'react'
+import Table from "./Table"
 
 
 class App extends React.Component {
@@ -25,17 +25,17 @@ class App extends React.Component {
     }
 
     removeCharacter = (index) => {
-        const { characters } = this.state;
+        const { characters } = this.state
     
         this.setState({
             characters: characters.filter((character, i) => {
-                return i !== index;
+                return i !== index
             })
         })
     }
 
     render() {
-        const { characters } = this.state;
+        const { characters } = this.state
 
         return (
         <div className='App'>
@@ -46,4 +46,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default App
